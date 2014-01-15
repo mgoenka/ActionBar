@@ -1,6 +1,7 @@
 package com.mgoenka.example.actionbar;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -23,5 +24,9 @@ public class ActionBarActivity extends Activity {
 	
 	public void onStatus(MenuItem mi) {
 		Toast.makeText(this, "Clicked!", Toast.LENGTH_SHORT).show();
+		Intent i = new Intent(this, SecondActivity.class);
+		i.putExtra("label", "Second Test Info");
+		i.putExtra("int", 5);
+		startActivity(i);
 	}
 }
