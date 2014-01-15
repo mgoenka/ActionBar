@@ -1,0 +1,11 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+	<item
+        android:id="@+id/miStatus"
+        android:icon="@drawable/ic_status"
+        android:onClick="onStatus"
+        android:showAsAction="ifRoom"
+        android:title="Status">
+    </item>
+
+</menu>
